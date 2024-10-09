@@ -124,11 +124,11 @@
 	},
 	"sources": {
 		"contracts/MiniBank.sol": {
-			"keccak256": "0xbb694204bdf1ccda02f31ffb09f8df3a8b7802a9e7729eeaf9649907ca4be788",
+			"keccak256": "0x0c3c7d0ab8e04e0c2a40d6b915a7f271cef1e3fc87e227b245c28abfbb31afd7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b6998b45f8d0bcb4881b880f3b37097dac74ce1113673237df1c8f4dc7516bfc",
-				"dweb:/ipfs/QmZjamcMz2Sc1DoX4n47FzdQFCfQqc3aMrz4TPqbKfGy1v"
+				"bzz-raw://b4545e9c5c8cba17e2002caa134078abf11f3fdd3a5eac85e31c072eac0f2f30",
+				"dweb:/ipfs/QmaJX67rLzS3qGWTscoNWSofCfQHUoobVCXgpev4LJprEo"
 			]
 		}
 	},
