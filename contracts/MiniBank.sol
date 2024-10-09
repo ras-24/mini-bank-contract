@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// Mini Bank Contract
 
 pragma solidity >=0.7.0 <0.9.0;
 
