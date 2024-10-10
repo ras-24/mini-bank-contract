@@ -17,6 +17,7 @@ contract MiniBank {
 
     function cashWithdraw(uint _value) public {
         require(balance[msg.sender] >= _value, "Insufficient balance");
+        balance[msg.sender] -= _value;
         payable(msg.sender).transfer(_value);
         emit withdraw(msg.sender, _value);
     }
