@@ -81,19 +81,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -124,11 +111,11 @@
 	},
 	"sources": {
 		"contracts/MiniBank.sol": {
-			"keccak256": "0x41ed8b26430709e90f7cba88adcdabaf3f4d14a4c3deab84e8d4a35bf6675833",
+			"keccak256": "0xab942020ba70334d1cb7005670597d2492c41f14d02672a0af5aae852476b3f5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1146bbee01d047085684fb6320a55bd68fd03b6059d42c18ee46ab6a1bbb0ac6",
-				"dweb:/ipfs/QmQNACu5AmT2CjGnoH5q57Jw1WLSoyuup9AcgAwdFQjoph"
+				"bzz-raw://25ae8c7019bf3252690c4999ab5a56a8d5ec2074d03b0b8aa9967b5c3f6645c9",
+				"dweb:/ipfs/QmSJBZUpoSUfonViBpRCUixubdf1kqiJ1WbRzguqWpZ3UE"
 			]
 		}
 	},

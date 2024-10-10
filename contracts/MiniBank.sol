@@ -21,8 +21,4 @@ contract MiniBank {
         payable(msg.sender).transfer(_value);
         emit withdraw(msg.sender, _value);
     }
-
-    function getBalance() public view returns (uint256) {
-        return balance[msg.sender];
-    }
 }
