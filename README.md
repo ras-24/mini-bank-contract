@@ -7,10 +7,10 @@ Mini Bank Smart Contract
 3. **Balance** -> Show balance based on Account Address.
 
 ### Prerequisites
-1. This project runs on [Remix IDE](https://remix.ethereum.org)
+1. This project runs on [Remix IDE](https://remix.ethereum.org).
 
 ### Installation
-1. Open [Remix IDE](https://remix.ethereum.org)
+1. Open [Remix IDE](https://remix.ethereum.org).
 2. On the Remix left side menu, click **Git** then click **CLONE**.
 3. Paste URL below on **url** in **CLONE FROM URL** section.
    ```sh
@@ -20,52 +20,27 @@ Mini Bank Smart Contract
 5. Click **clone**.
 
 ### Deploy Example
-1. **bookId**
+1. **cashDeposit**
 
-   click **bookId**
+   Choose **Account** you want to Deposit on **ACCOUNT** section.
+
+   Enter the amount you wish to deposit on the **VALUE** section in **Wei** units.
+
+   click **cashDeposit**.
    
-   ```0: uint256: 0``` (Usable book ID is **0**)
-2. **addBook**
+   Note : We use [Ethereum Unit Converter](https://eth-converter.com/) to Convert the amount.
+2. **cashWithdraw**
 
-   _bookName: Blockchain Technology
+   Enter the amount you wish to withdraw in **Wei** units.
 
-   _bookPrice: 10000000000000000
+   click **cashWithdraw**.
 
-   click **transact**
-
-   Note : Book Price in **Wei** or 0,01 **Ether** ($24.32) (2432.18 $ Per Ether)
-
-   We use [Ethereum Unit Converter](https://eth-converter.com/) to Convert the Price.
-3. **allBooks**
+3. **balance**
    
-   Type **0** for show the first array data.
+   Select the Account Address you want to get balance on the **ACCOUNT** section.
 
-   click **allBooks**
+   Copy the Account Address.
 
-   ```
-   0: uint256: id 0
-   1: string: bookName Blockchain Technology
-   2: uint256: bookPrice 10000000000000000
-   3: address: bookOwner 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
-   ```
-4. **buyBook**
-   
-   Choose different **account address** to buy the book.
+   Paste the Account Address on **balance** section in **address** field.
 
-   Enter the book price on the **VALUE** field : 10000000000000000 (**Wei**)
-
-   Enter the book ID on **buyBook** : **0**
-
-   click **buyBook**
-
-   After buy we can check the book owner by click **allBooks**
-   ```
-   0: uint256: id 0
-   1: string: bookName Blockchain Technology
-   2: uint256: bookPrice 10000000000000000
-   3: address: bookOwner 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
-   ```
-
-   We can see the book ownership has changed from
-
-   **0x5B38Da6a701c568545dCfcB03FcB875f56beddC4** to **0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2**
+   click **balance**.
