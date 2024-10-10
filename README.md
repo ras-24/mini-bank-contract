@@ -1,28 +1,71 @@
-REMIX DEFAULT WORKSPACE
+# mini-bank-contract
+Mini Bank Smart Contract
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+## Features
+1. **Cash Deposit** -> Deposit to Bank Balance.
+2. **Cash Withdraw** -> Withdraw to Account Balance.
+3. **Balance** -> Show balance based on Account Address.
 
-This workspace contains 3 directories:
+### Prerequisites
+1. This project runs on [Remix IDE](https://remix.ethereum.org)
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
+### Installation
+1. Open [Remix IDE](https://remix.ethereum.org)
+2. On the Remix left side menu, click **Git** then click **CLONE**.
+3. Paste URL below on **url** in **CLONE FROM URL** section.
+   ```sh
+   https://github.com/ras-24/mini-bank-contract.git
+   ```
+4. Type ```main``` on ***branch*** in **CLONE FROM URL** section.
+5. Click **clone**.
 
-SCRIPTS
+### Deploy Example
+1. **bookId**
 
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
+   click **bookId**
+   
+   ```0: uint256: 0``` (Usable book ID is **0**)
+2. **addBook**
 
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
+   _bookName: Blockchain Technology
 
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
+   _bookPrice: 10000000000000000
 
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
+   click **transact**
 
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+   Note : Book Price in **Wei** or 0,01 **Ether** ($24.32) (2432.18 $ Per Ether)
+
+   We use [Ethereum Unit Converter](https://eth-converter.com/) to Convert the Price.
+3. **allBooks**
+   
+   Type **0** for show the first array data.
+
+   click **allBooks**
+
+   ```
+   0: uint256: id 0
+   1: string: bookName Blockchain Technology
+   2: uint256: bookPrice 10000000000000000
+   3: address: bookOwner 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+   ```
+4. **buyBook**
+   
+   Choose different **account address** to buy the book.
+
+   Enter the book price on the **VALUE** field : 10000000000000000 (**Wei**)
+
+   Enter the book ID on **buyBook** : **0**
+
+   click **buyBook**
+
+   After buy we can check the book owner by click **allBooks**
+   ```
+   0: uint256: id 0
+   1: string: bookName Blockchain Technology
+   2: uint256: bookPrice 10000000000000000
+   3: address: bookOwner 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
+   ```
+
+   We can see the book ownership has changed from
+
+   **0x5B38Da6a701c568545dCfcB03FcB875f56beddC4** to **0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2**
